@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bandpairing">
+
+    <RelativeLayout
+        android:id="@+id/bandpairinghead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/bandpairingheadtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setup a New Band"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FD8229"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bandpairingbody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/bandpairingimage"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/band"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bandpairingbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp">
+
+        <TextView
+            android:id="@+id/bandpairingbottomtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".. Tap on band to start pairing .."
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FD8229"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

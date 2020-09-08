@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Steps">
+
+    <RelativeLayout
+        android:id="@+id/stepstop"
+        android:layout_width="match_parent"
+        android:layout_height="340dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:src="@drawable/stepsback"/>
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/walking1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/stepstophead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/stepsbackicon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/stepsbacktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/stepsbackicon"
+                android:layout_marginLeft="10dp"
+                android:text="Dashboard"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/stepsheadtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:text="Step Counter"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/stepsprogressbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/homeprogressbar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp">
+
+            <ProgressBar
+                android:id="@+id/stepsprogressbar"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                style="@style/MyProgressBar"
+                android:theme="@style/MyProgressBar"
+                android:layout_centerVertical="true"
+                android:maxHeight="20dp"
+                android:minHeight="20dp"
+                android:progress="00"
+                android:max="100"/>
+
+            <ImageView
+                android:id="@+id/stepssteps"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/walking1"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/stepsheadcontent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/stepsprogressbarlayout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COVERED"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL STEPS"
+                android:layout_centerHorizontal="true"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TARGET"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/stepsheadcontent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/stepsheadcontent1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/stepscurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100 STEPS"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/stepstarget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000 STEPS"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textSize="18dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/stepsbottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/stepsrefresh"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/refreshhome"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/stepsbody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/stepstop"
+        android:layout_above="@id/stepsbottom">
+
+        <TextView
+            android:id="@+id/stepsbtxt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Steps Log"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#F35645"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_steps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/stepsbtxt1"
+            android:layout_margin="30dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

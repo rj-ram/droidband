@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Userinfo">
+
+    <RelativeLayout
+        android:id="@+id/userinfohead"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/gradientbackground">
+
+        <TextView
+            android:id="@+id/userinfohead1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Information"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/userinfobody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/userinfohead"
+        android:layout_marginTop="20dp">
+
+
+        <RelativeLayout
+            android:id="@+id/userinfobody2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <ImageView
+                android:id="@+id/userinfonamepic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/name"/>
+
+            <EditText
+                android:id="@+id/userinfoname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/userinfonamepic"
+                android:background="@drawable/inputbackground"
+                android:hint="Name of User"
+                android:inputType="textCapCharacters"
+                android:padding="10dp"
+                android:textColor="#000000" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/userinfobody4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userinfobody2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/userinfocontactpic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/phone_1"/>
+
+            <EditText
+                android:id="@+id/userinfocontact"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/userinfocontactpic"
+                android:background="@drawable/inputbackground"
+                android:hint="Contact Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/userinfobody5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userinfobody4"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/userinfoidpic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/height"/>
+
+            <EditText
+                android:id="@+id/userinfoheight"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/userinfoidpic"
+                android:background="@drawable/inputbackground"
+                android:hint="Height"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/userinfobody6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userinfobody5"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/userinfoidpic1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/weight"/>
+
+            <EditText
+                android:id="@+id/userinfoweight"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/inputbackground"
+                android:layout_toRightOf="@id/userinfoidpic1"
+                android:layout_marginLeft="20dp"
+                android:hint="Weight"
+                android:padding="10dp"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/userinfobutton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_below="@id/userinfobody6"
+            android:layout_marginTop="60dp"
+            android:text="Update Information"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonbackground1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/gradientbackground"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

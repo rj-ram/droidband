@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/connectedappbanddetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:id="@+id/connectedappicon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/incoming"/>
+
+        <TextView
+            android:id="@+id/connectedappname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APP NAME"
+            android:layout_toRightOf="@id/connectedappicon"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:textColor="#FD8229"
+            android:textStyle="bold"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch1"
+            android:theme="@style/SwitchTheme"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

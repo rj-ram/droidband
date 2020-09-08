@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reminder">
+
+    <RelativeLayout
+        android:id="@+id/remindertop"
+        android:layout_width="match_parent"
+        android:layout_height="340dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:src="@drawable/reminderback"/>
+
+        <RelativeLayout
+            android:id="@+id/remindertophead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/reminderbackicon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/reminderbacktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/reminderbackicon"
+                android:layout_marginLeft="10dp"
+                android:text="Dashboard"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/reminderheadtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:text="Reminders"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/reminderheadtxtnull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPCOMING TASKS"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_below="@id/remindertophead"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_upcomingtasks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/reminderheadtxtnull"
+            android:layout_above="@id/remindertopbottom"
+            android:background="@null"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+        <RelativeLayout
+            android:id="@+id/remindertopbottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp">
+
+
+            <TextView
+                android:id="@+id/reminderdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="08 NOV"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+
+            <DigitalClock
+                android:id="@+id/homewindowclock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 : 01"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/reminderbody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/remindertop"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/reminderbodynull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/reminderlayout1"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/reminder_layout"
+            android:layout_below="@id/reminderbodynull"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:id="@+id/remindercard"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/card"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transanction"
+                android:textSize="10dp"
+                android:layout_toRightOf="@id/remindercard"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_remindercard"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_below="@id/remindercard"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reminderlayout2"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/reminder_layout"
+            android:layout_below="@id/reminderbodynull"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/reminderevents"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/reminder2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Events"
+                android:textSize="10dp"
+                android:layout_toRightOf="@id/reminderevents"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_reminderevents"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_below="@id/reminderevents"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reminderlayout3"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/reminder_layout"
+            android:layout_below="@id/reminderlayout1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:id="@+id/reminderrecharge"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/phone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recharges"
+                android:textSize="10dp"
+                android:layout_toRightOf="@id/reminderrecharge"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_reminderrecharge"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_below="@id/reminderrecharge"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reminderlayout4"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/reminder_layout"
+            android:layout_below="@id/reminderlayout1"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/reminderenergy"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/electricity"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Energy Payments"
+                android:textSize="10dp"
+                android:layout_toRightOf="@id/reminderenergy"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_reminderenergy"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_below="@id/reminderenergy"/>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/reminderadd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/add1"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

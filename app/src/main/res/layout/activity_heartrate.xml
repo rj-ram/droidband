@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Heartrate">
+
+    <RelativeLayout
+        android:id="@+id/heartratetop"
+        android:layout_width="match_parent"
+        android:layout_height="340dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:src="@drawable/heartrateback"/>
+
+        <RelativeLayout
+            android:id="@+id/heartratetophead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/heartratebackicon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/heartratebacktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/heartratebackicon"
+                android:layout_marginLeft="10dp"
+                android:text="Dashboard"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/heartrateheadtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:text="Heart Rate Monitor"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CURRENT HEART RATE"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/heartratetophead"
+            android:layout_marginTop="35dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="16dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/ecg1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ecg"/>
+
+            <ImageView
+                android:id="@+id/ecg2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_toRightOf="@id/ecg1"
+                android:src="@drawable/ecg"/>
+
+            <ImageView
+                android:id="@+id/ecg3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_toRightOf="@id/ecg2"
+                android:src="@drawable/ecg"/>
+
+            <ImageView
+                android:id="@+id/ecg4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_toRightOf="@id/ecg3"
+                android:src="@drawable/ecg"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/heartratetopbottom"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+            <ImageView
+                android:id="@+id/heartratebottomimg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/heartbeat1"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/dot1"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/heartratebottomimg"
+                android:layout_marginRight="30dp"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/dot1"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/heartratebottomimg"
+                android:layout_marginLeft="30dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/bpmnulltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/heartratetopbottom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="BPM"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/bpmtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bpmnulltext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="80"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="24dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/heartratebottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/heartraterefresh"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/refreshhome"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/heartratebody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/heartratetop"
+        android:layout_above="@id/heartratebottom">
+
+        <TextView
+            android:id="@+id/heartratebtxt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent Scan Log"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#FB7F73"/>
+
+        <RelativeLayout
+            android:id="@+id/ratelayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/heartratebtxt1"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/heartratedot1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/dot2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"/>
+
+            <TextView
+                android:id="@+id/ratetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/heartratedot1"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:text="RATE :"
+                android:textStyle="bold"
+                android:textColor="#FB7F73"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/heartratedatelayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/ratelayout"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/heartratedot2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/dot2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"/>
+
+            <TextView
+                android:id="@+id/heartratedatetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/heartratedot2"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:text="DATE :"
+                android:textStyle="bold"
+                android:textColor="#FB7F73"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/heartratetimelayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/heartratedatelayout"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/heartratedot3"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/dot2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"/>
+
+            <TextView
+                android:id="@+id/heartratetimetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/heartratedot3"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:text="TIME :"
+                android:textStyle="bold"
+                android:textColor="#FB7F73"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/heartratestatuslayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/heartratetimelayout"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/heartratedot4"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/dot2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"/>
+
+            <TextView
+                android:id="@+id/heartratestatustxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/heartratedot4"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:text="STATUS :"
+                android:textStyle="bold"
+                android:textColor="#FB7F73"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

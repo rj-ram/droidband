@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/cyclinglayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/cyclingdot1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/dot3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:id="@+id/cyclingtxtmain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/cyclingdot1"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:text="147 Calories Cycling"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/cyclingtxtsub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cyclingtxtmain"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:text="0.5 KM"
+            android:textStyle="bold"
+            android:textColor="#918F8E"
+            android:textSize="12dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

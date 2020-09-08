@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sleepwindow">
+
+    <RelativeLayout
+        android:id="@+id/sleepwindowtop"
+        android:layout_width="match_parent"
+        android:layout_height="360dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:src="@drawable/sleepwindow_background"/>
+
+        <RelativeLayout
+            android:id="@+id/sleepwindowtophead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/sleepwindowbackicon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/sleepwindowbacktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/sleepwindowbackicon"
+                android:layout_marginLeft="10dp"
+                android:text="Dashboard"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/sleepwindowheadtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:text="Sleep Window"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sleepwindowgraphlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/sleepwindowtopicons"
+            android:layout_below="@id/sleepwindowtophead"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:id="@+id/sleepwindowgraphdays"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/sleepwindowsunday1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/sleepwindowmonday1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/sleepwindowsunday1"
+                    android:layout_marginLeft="40dp"
+                    android:text="M"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/sleepwindowtuesday1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/sleepwindowmonday1"
+                    android:layout_marginLeft="40dp"
+                    android:text="T"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/sleepwindowwednesday1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/sleepwindowtuesday1"
+                    android:layout_marginLeft="40dp"
+                    android:text="W"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/sleepwindowthursday1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/sleepwindowwednesday1"
+                    android:layout_marginLeft="40dp"
+                    android:text="T"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/sleepwindowfriday1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/sleepwindowthursday1"
+                    android:layout_marginLeft="40dp"
+                    android:text="F"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/sleepwindowsaturday1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/sleepwindowfriday1"
+                    android:layout_marginLeft="40dp"
+                    android:text="S"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:layout_below="@id/sleepwindowgraphdays"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/view12"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_below="@id/sleepwindowgraphdays"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:layout_below="@id/view12"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/view13"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_below="@id/view12"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_below="@id/view13"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/view14"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_below="@id/view13"/>
+
+            <RelativeLayout
+                android:id="@+id/sleepwindowgraph"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="21dp">
+
+                <ProgressBar
+                    android:id="@+id/sleepwindowgraphsunday"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:progressDrawable="@drawable/vertical_progressbar"
+                    android:progress="100"/>
+
+                <ProgressBar
+                    android:id="@+id/sleepwindowgraphmonday"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/sleepwindowgraphsunday"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:progressDrawable="@drawable/vertical_progressbar"
+                    android:progress="100"/>
+
+                <ProgressBar
+                    android:id="@+id/sleepwindowgraphtuesday"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/sleepwindowgraphmonday"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:progressDrawable="@drawable/vertical_progressbar"
+                    android:progress="100"/>
+
+                <ProgressBar
+                    android:id="@+id/sleepwindowgraphwednesday"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/sleepwindowgraphtuesday"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:progressDrawable="@drawable/vertical_progressbar"
+                    android:progress="100"/>
+
+                <ProgressBar
+                    android:id="@+id/sleepwindowgraphthursday"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/sleepwindowgraphwednesday"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:progressDrawable="@drawable/vertical_progressbar"
+                    android:progress="100"/>
+
+                <ProgressBar
+                    android:id="@+id/sleepwindowgraphfriday"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/sleepwindowgraphthursday"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:progressDrawable="@drawable/vertical_progressbar"
+                    android:progress="100"/>
+
+                <ProgressBar
+                    android:id="@+id/sleepwindowgraphsaturday"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/sleepwindowgraphfriday"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:progressDrawable="@drawable/vertical_progressbar"
+                    android:progress="100"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sleepwindowtopicons"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/sleepwindowdot1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/dot1"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"/>
+
+            <ImageView
+                android:id="@+id/sleepwindowmoon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sleep1"
+                android:layout_toRightOf="@id/sleepwindowdot1"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/dot1"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/sleepwindowmoon"
+                android:layout_marginLeft="20dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sleepwindowmiddle"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/sleepwindowtop"
+        android:background="@drawable/sleepwindow_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Week"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/sleepwindowavg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7 hr 9 min Avg"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sleepwindowbottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/sleepwindowrefresh"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/refreshhome"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sleepwindowbody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sleepwindowmiddle"
+        android:layout_above="@id/sleepwindowbottom"
+        android:layout_margin="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_sleepwindow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Helpguide">
+
+    <RelativeLayout
+        android:id="@+id/helpguidehead"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/helpguidebackicon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/helpguidebacktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/helpguidebackicon"
+                android:layout_marginLeft="10dp"
+                android:text="Set Goal"
+                android:textStyle="bold"
+                android:textColor="#E00072"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/helpguideheadtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:text="Help Guide"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textColor="#E00072"
+            android:textSize="18dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/helpguidehead">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/helpguidetargetstep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/helpguidetargetstephead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Target Steps"
+                    android:textAllCaps="false"
+                    android:textColor="#E00072"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/helpguidetargetstephead"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:lineSpacingExtra="12sp"
+                    android:text="Target steps allows you to set daily target step count. To set count click on the drop down list and select a step count and then click set goal."
+                    android:textColor="#E00072" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/helpguidetargetdistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/helpguidetargetstep">
+
+                <TextView
+                    android:id="@+id/helpguidetargetdistancehead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Target Distance"
+                    android:textAllCaps="false"
+                    android:textColor="#E00072"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/helpguidetargetdistancehead"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:lineSpacingExtra="12sp"
+                    android:text="Target distance allows you to set daily target distance to cover. To set count click on the drop down list and select a target distance and then click set goal."
+                    android:textColor="#E00072" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/helpguidetargetcycling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/helpguidetargetdistance">
+
+                <TextView
+                    android:id="@+id/helpguidetargetcyclinghead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Target Cycling"
+                    android:textAllCaps="false"
+                    android:textColor="#E00072"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/helpguidetargetcyclinghead"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:lineSpacingExtra="12sp"
+                    android:text="Target cycling allows you to set daily target cycling. To set count click on the drop down list and select a target cycling distance and then click set goal."
+                    android:textColor="#E00072" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/helpguidetargetcalories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:layout_below="@id/helpguidetargetcycling">
+
+                <TextView
+                    android:id="@+id/helpguidetargetcalorieshead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Target Calories"
+                    android:textAllCaps="false"
+                    android:textColor="#E00072"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/helpguidetargetcalorieshead"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:lineSpacingExtra="12sp"
+                    android:text="Target calories allows you to set daily target calories. To set count click on the drop down list and select a target calories and then click set goal."
+                    android:textColor="#E00072" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

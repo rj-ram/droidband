@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Connectedapps">
+
+    <RelativeLayout
+        android:id="@+id/connectedapphead"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/connectedappbackicon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/connectedappbacktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/connectedappbackicon"
+                android:layout_marginLeft="10dp"
+                android:text="Profile"
+                android:textStyle="bold"
+                android:textColor="#FD8229"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/connectedappheadtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:text="Connected Apps"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textColor="#FD8229"
+            android:textSize="18dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/connectedappbody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/connectedapphead"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/connectedappbandimage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/miband"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <View
+            android:id="@+id/view11"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FD8229"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/connectedappbandimage"/>
+
+       <TextView
+           android:id="@+id/connectedappbodytxt1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/view11"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="20dp"
+           android:text="App Notification"
+           android:textStyle="bold"
+           android:textColor="#FD8229"/>
+
+        <RelativeLayout
+            android:id="@+id/connectedapp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/connectedappbodytxt1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/connectedappicon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/incoming"/>
+
+            <TextView
+                android:id="@+id/connectedappname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Incoming Call"
+                android:layout_toRightOf="@id/connectedappicon"
+                android:layout_marginLeft="40dp"
+                android:layout_centerVertical="true"
+                android:textColor="#FD8229"
+                android:textStyle="bold"/>
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/SwitchTheme"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/connectedapp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/connectedapp1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/connectedapp2icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/whatsapp"/>
+
+            <TextView
+                android:id="@+id/connectedapp2name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WhatsApp"
+                android:layout_toRightOf="@id/connectedapp2icon"
+                android:layout_marginLeft="40dp"
+                android:layout_centerVertical="true"
+                android:textColor="#FD8229"
+                android:textStyle="bold"/>
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/SwitchTheme"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/connectedapp3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/connectedapp2"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/connectedapp3icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/facebook"/>
+
+            <TextView
+                android:id="@+id/connectedapp3name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facebook"
+                android:layout_toRightOf="@id/connectedapp3icon"
+                android:layout_marginLeft="40dp"
+                android:layout_centerVertical="true"
+                android:textColor="#FD8229"
+                android:textStyle="bold"/>
+
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/SwitchTheme"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/connectedapp4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/connectedapp3"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/connectedapp4icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/messages"/>
+
+            <TextView
+                android:id="@+id/connectedapp4name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Messages"
+                android:layout_toRightOf="@id/connectedapp4icon"
+                android:layout_marginLeft="40dp"
+                android:layout_centerVertical="true"
+                android:textColor="#FD8229"
+                android:textStyle="bold"/>
+
+            <Switch
+                android:id="@+id/switch4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/SwitchTheme"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

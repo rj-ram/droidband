@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/update_layout"
+    android:orientation="vertical"
+    tools:context=".Updatewindow">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/updatewindowclose"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/close_button" />
+
+        <ImageView
+            android:id="@+id/updatewindowbrandimage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/mi"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/updatewindowbandfirmwarebodytxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AVAILABLE UPDATE "
+            android:layout_below="@id/updatewindowbrandimage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textColor="#FD8229"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/updatewindowbandfirmware"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Firmware :"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/updatewindowbandfirmwarebodytxt"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textColor="#FD8229"
+            android:textSize="16dp"/>
+
+        <ProgressBar
+            android:id="@+id/updatewindowprogressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_below="@id/updatewindowbandfirmware"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/updatewindowbutton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/updatewindowbandfirmware"
+            android:background="@drawable/button_profile"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPDATE NOW"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="#FFA851"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/updatewindowbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/updatewindowicon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/droidparkz" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/updatewindowicon"
+                android:text="DROID BAND"
+                android:textColor="#262549"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

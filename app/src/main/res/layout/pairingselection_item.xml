@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/pairingselectionbanddetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+        
+        <TextView
+            android:id="@+id/pairingselectionbandname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BAND NAME"
+            android:textSize="14dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="#FD8229"
+            android:textStyle="bold"/>
+        
+        <ImageView
+            android:id="@+id/pairingselectionbluetoothicon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/bluetooth3"
+            android:layout_alignParentRight="true"/>
+        
+    </RelativeLayout>
+
+</LinearLayout>

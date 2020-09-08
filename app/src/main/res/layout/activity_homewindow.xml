@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homewindow">
+
+    <RelativeLayout
+        android:id="@+id/homewindowtop"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/homeback"/>
+
+        <TextView
+            android:id="@+id/homewindowheadtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Droid Band"
+            android:textSize="24dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"/>
+
+        <RelativeLayout
+            android:id="@+id/homeprogressbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/homeprogressbar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp">
+
+            <ProgressBar
+                android:id="@+id/homewindowprogressbar"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                style="@style/MyProgressBar"
+                android:theme="@style/MyProgressBar"
+                android:layout_centerVertical="true"
+                android:maxHeight="20dp"
+                android:minHeight="20dp"
+                android:max="100"/>
+
+            <ImageView
+                android:id="@+id/homerunning1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/running1"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homewindowheadcontent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/homeprogressbarlayout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COVERED"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL DISTANCE"
+                android:layout_centerHorizontal="true"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TARGET"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homewindowheadcontent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/homewindowheadcontent1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/homewindowcurrentdistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 KM"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/homewindowtargetdistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 KM"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homewindowheadcontent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/homewindowdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08 NOV"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <DigitalClock
+                android:id="@+id/homewindowclock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 : 01"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/homewindowmiddle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/homewindowtop"
+        android:layout_above="@id/homewindowbottom"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:id="@+id/homewindowsleep"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:background="@drawable/homeiconsback"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/homesleep"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/sleep"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SLEEP"
+                android:layout_below="@id/homesleep"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:textColor="#29D2E7"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homewindowheartbeat"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:background="@drawable/homeiconsback"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/homeheart"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/heartrate"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HEART RATE"
+                android:layout_below="@id/homeheart"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:textColor="#29D2E7"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homewindowcalories"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:background="@drawable/homeiconsback"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/homecalories"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/calorie"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CALORIES"
+                android:layout_below="@id/homecalories"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:textColor="#29D2E7"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homewindowreminder"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:background="@drawable/homeiconsback"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/homereminder"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/reminder"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REMINDER"
+                android:layout_below="@id/homereminder"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:textColor="#29D2E7"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homewindowcycling"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:background="@drawable/homeiconsback"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/homecycling"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/cycling"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CYCLING"
+                android:layout_below="@id/homecycling"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:textColor="#29D2E7"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homewindowsteps"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:background="@drawable/homeiconsback"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/homesteps"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/walking"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STEPS"
+                android:layout_below="@id/homesteps"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:textColor="#29D2E7"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/homewindowbottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bottomnavigationback"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/homewindowadd"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/add"/>
+
+        <ImageView
+            android:id="@+id/homewindowrefresh"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/refreshhome"/>
+
+        <ImageView
+            android:id="@+id/homewindowprofile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/profile"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.droidparkz.droidband">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Helpguide"></activity>
+        <activity android:name=".Userinfo" />
+        <activity
+            android:name=".Updatewindow"
+            android:theme="@style/AppTheme.UpdateWindow" />
+        <activity android:name=".Calorie" />
+        <activity android:name=".Sleepwindow" />
+        <activity android:name=".Connectedapps" />
+        <activity android:name=".Addreminder" />
+        <activity android:name=".Reminder" />
+        <activity android:name=".Steps" />
+        <activity android:name=".Cycling" />
+        <activity android:name=".Heartrate" />
+        <activity android:name=".Personalinfo" />
+        <activity android:name=".Deviceinfo" />
+        <activity android:name=".Profilewindow" />
+        <activity android:name=".Setgoal" />
+        <activity android:name=".Homewindow" />
+        <activity android:name=".Pairingmessage" />
+        <activity android:name=".Pairingwindow" />
+        <activity android:name=".Pairingselection" />
+        <activity android:name=".Bandpairing" />
+        <activity android:name=".Loginwindow" />
+        <activity android:name=".Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

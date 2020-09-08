@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cycling">
+
+    <RelativeLayout
+        android:id="@+id/cyclingtop"
+        android:layout_width="match_parent"
+        android:layout_height="340dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:src="@drawable/cyclingback"/>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cycling1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cyclingtophead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/cyclingbackicon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/cyclingbacktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/cyclingbackicon"
+                android:layout_marginLeft="10dp"
+                android:text="Dashboard"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/cyclingheadtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:text="Cycling Meter"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cyclingprogressbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/homeprogressbar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp">
+
+            <ProgressBar
+                android:id="@+id/cyclingprogressbar"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                style="@style/MyProgressBar"
+                android:theme="@style/MyProgressBar"
+                android:layout_centerVertical="true"
+                android:maxHeight="20dp"
+                android:minHeight="20dp"
+                android:progress="00"
+                android:max="100"/>
+
+            <ImageView
+                android:id="@+id/cyclingcycling"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/cycling"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cyclingheadcontent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/cyclingprogressbarlayout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COVERED"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL DISTANCE"
+                android:layout_centerHorizontal="true"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TARGET"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cyclingheadcontent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/cyclingheadcontent1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/cyclingcurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 KM"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/cyclingtarget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 KM"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cyclingbottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/cyclingrefresh"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/refreshhome"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cyclingbody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cyclingtop"
+        android:layout_above="@id/cyclingbottom">
+
+        <TextView
+            android:id="@+id/cyclingbtxt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cycling Log"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#07BBC5"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_cycling"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cyclingbtxt1"
+            android:layout_margin="30dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

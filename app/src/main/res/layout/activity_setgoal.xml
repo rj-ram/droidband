@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setgoal">
+
+    <RelativeLayout
+        android:id="@+id/setgoalhead"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/setgoalbackicon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/setgoalbacktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/setgoalbackicon"
+                android:layout_marginLeft="10dp"
+                android:text="Dashboard"
+                android:textStyle="bold"
+                android:textColor="#E00072"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/setgoalheadtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:text="Set Goals"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textColor="#E00072"
+            android:textSize="18dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/setgoalhead"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/setgoalwalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/setgoalwalkimage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/setgoalwalk"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/setgoalwalkspinner"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:layout_toLeftOf="@id/setgoalwalkimage"
+                android:background="@drawable/dropdown_setgoal"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setgoalrun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/setgoalwalk"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/setgoalrunimage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/setgoalrunning"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/setgoalrunspinner"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:layout_toLeftOf="@id/setgoalrunimage"
+                android:background="@drawable/dropdown_setgoal"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setgoalcycling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/setgoalrun"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/setgoalcyclingimage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/setgoalcycling"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/setgoalcyclingspinner"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:layout_toLeftOf="@id/setgoalcyclingimage"
+                android:background="@drawable/dropdown_setgoal"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setgoalcalorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/setgoalcycling"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/setgoalcalorieimage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/setgoalcalorie"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/setgoalcaloriespinner"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:layout_toLeftOf="@id/setgoalcalorieimage"
+                android:background="@drawable/dropdown_setgoal"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setgoalbottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:id="@+id/setgoalhelptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="Help Guide"
+                android:textStyle="bold"
+                android:textColor="#E00072"/>
+
+            <TextView
+                android:id="@+id/setgoalresettext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:text="Reset Targets"
+                android:textStyle="bold"
+                android:textColor="#E00072"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@id/setgoalbottom"
+            android:layout_marginBottom="60dp">
+
+            <Button
+                android:id="@+id/setgoalsubmit"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="@drawable/setgoal_buton"
+                android:layout_centerHorizontal="true"
+                android:text="SET GOALS"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

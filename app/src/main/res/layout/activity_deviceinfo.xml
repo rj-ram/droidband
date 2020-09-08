@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Deviceinfo">
+
+    <RelativeLayout
+        android:id="@+id/deviceinfohead"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/deviceinfobackicon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/deviceinfobacktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/deviceinfobackicon"
+                android:layout_marginLeft="10dp"
+                android:text="Profile"
+                android:textStyle="bold"
+                android:textColor="#FD8229"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/deviceinfoheadtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:text="Device Information"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textColor="#FD8229"
+            android:textSize="18dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/deviceinfobody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/deviceinfohead"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/devicebandimage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/miband"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/devicebandname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device Information"
+            android:layout_below="@id/devicebandimage"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="#FD8229"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/devicebandbodytxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device Details"
+            android:layout_below="@id/devicebandname"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textColor="#FD8229"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/devicebandmacid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAC ID :"
+            android:layout_below="@id/devicebandbodytxt"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textColor="#FD8229"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/devicebandbluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bluetooth Version :"
+            android:layout_below="@id/devicebandmacid"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textColor="#FD8229"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/devicebandbattery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Battery Status :"
+            android:layout_below="@id/devicebandbluetooth"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textColor="#FD8229"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/devicebandfirmware"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Firmware :"
+            android:layout_below="@id/devicebandbattery"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textColor="#FD8229"
+            android:textSize="16dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/deviceupdate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_profile"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <TextView
+            android:id="@+id/deviceupdatebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check For Updates"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:textColor="#FFA851"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
